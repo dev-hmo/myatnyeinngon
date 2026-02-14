@@ -313,7 +313,7 @@ function DaysCounter({ days }: { days: number }) {
 function LoveTimeline() {
   const events = [
     { date: "May 4, 2020", text: "The day our story began ❤️" },
-    { date: "First Trip", text: "Our first adventure together ✨" },
+    { date: "Our Frist Date", text: "Our first date was magical 💕" },
     { date: "First Anniversary", text: "365 days of love 🎉" },
     { date: "Today", text: "Still choosing you, every single day 💕" },
   ];
@@ -360,7 +360,21 @@ function LoveTimeline() {
 /* PHOTO SLIDER */
 
 function PhotoSlider() {
-  const photos = ["/photo1.jpg", "/photo2.jpg", "/photo3.jpg"];
+  const photos = [
+    "/photo1.png",
+    "/photo2.png",
+    "/photo3.png",
+    "/photo4.png",
+    "/photo5.png",
+    "/photo6.png",
+    "/photo7.png",
+    "/photo8.png",
+    "/photo9.png",
+    "/photo10.png",
+    "/photo11.png",
+    "/photo12.png",
+    "/photo13.png",
+  ];
   const [index, setIndex] = useState(0);
 
   const next = () => setIndex((prev) => (prev + 1) % photos.length);
@@ -374,7 +388,7 @@ function PhotoSlider() {
           Our Memories
         </h2>
 
-        <div className="relative h-[260px] md:h-[340px] rounded-2xl overflow-hidden">
+        <div className="relative h-[560px] md:h-[640px] rounded-2xl overflow-hidden">
           <AnimatePresence mode="wait">
             <motion.img
               key={photos[index]}
