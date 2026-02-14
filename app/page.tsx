@@ -16,7 +16,7 @@ export default function UltimateValentine() {
   const narrationRef = useRef<SpeechSynthesisUtterance | null>(null);
 
   // CHANGE THIS PASSWORD
-  const SECRET_PASSWORD = "04052020";
+  const SECRET_PASSWORD = "452020";
 
   const startDate = new Date("2020-05-04");
   const today = new Date();
